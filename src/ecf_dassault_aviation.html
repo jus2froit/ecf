@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecf_dassault_aviation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> 
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>dassault_aviation</title>
+</head>
+<body >
+    <div class="grid grid-cols-7 gap-7">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+                <li><a href="#">Qui somme nous?</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Témoignages</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Aide</a></li>
+            </ul>
+        </div>
+        
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+            sidenav.classList.add("active");
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+            sidenav.classList.remove("active");
+            }
+        </script>
+        <div class="col-span-5 ">
+            <center><img src="/home/julian/Images/dassault.jpeg" alt=""></center>
+        </div>
+    </div>
+
+    <br>
+    <img src="/home/julian/Images/Avion.jpeg" alt="" class="w-full ">
+    <br>
+    <center><p> <a class="font-bold text-xl ">Dassault Aviation</a> est un groupe aéronautique français dual qui propose des avions militaires et des <br> avions d’affaires.
+        Créateur, en un siècle, d’une centaine de prototypes et de plus de 10 000 avions vendus dans 90 pays. </p></center>
+
+        <br>
+        <img src="/home/julian/Images/avion 2.jpg" alt="" class="w-full ">
+        <br>
+
+        <center><h1 class="font-bold"> <a class="underline decoration-pink-500  text-2xl  text-blue-600">ACTUALITE </a></h1></center>
+        <br>
+
+    <div class="grid grid-cols-2 gap-2">
+        <img src="/home/julian/Images/const_avion.jpg" alt="" class="w-5/6 h-32  lg:h-80">
+        <div>
+            <center><div class="font-bold text-lg"> Un paysan chinois fabrique un avion</div></center>
+            <center><p> Un paysan chinois a construit son propre aéroplane au milieu des champs. </p></center>
+            <center><p class="hidden lg:block">Zhu Yue est passionné d'aviation depuis son enfance. Ce paysan chinois rêvait de piloter un avion mais désespérait de ne jamais y parvenir il s'est décidé à construire son propre aéroplane au milieu des champs.
+                Il a presque terminé sa réplique grandeur nature d'un Airbus A320, garée sur un petit bout de tarmac cerné de champs de blé dans le nord-est de la Chine.
+                Son projet a englouti toutes ses économies, plus de 2,6 millions de yuans soit 374.000 dollars. "J'ai atteint le milieu de ma vie et j'ai réalisé que je ne pourrai pas acheter d'avion, mais que je pouvais en construire un".</p></center>
+        </div>
+    </div>
+    <br>
+    <center><span class='"box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2  font-bold  text-blue-600  text-2xl"''>DERNIERE <br>NEWS</span></center>
+    <br>
+    <div class="grid grid-cols-2 gap-2 ">
+        <div id="changeStyleOnclick_1">
+            <center><img src="/home/julian/Images/avion_papier.jpg" alt="" class="w-5/6 h-32 lg:h-80">
+            <div class="font-bold "> Le record du monde d’avion en papier battu </div></center>
+        </div>
+        <div id="changeStyleOnclick_2">
+            <center><img src="/home/julian/Images/bourget.jpeg" alt="" class="w-5/6  h-32 lg:h-80">
+            <div class="font-bold "> Le salon du Bourget aura lieu en juin 2023</div></center>
+        </div>
+        <div style="visibility:hidden" id="description_news_1">
+            <center>
+                <p>Le record du monde de lancer d'avion en papier a récemment été battu</p>
+            </center>
+        </div>
+
+        <div style="visibility:hidden" id="description_news_2">
+            <center>
+                <p>Le prochain salon du Bourget aura lieu du 19 au 25 juin 2023, celui-ci n'avait pas eu lieu depuis 2019</p>
+                <p class="hidden lg:block">Le Salon international de l'aéronautique et de l'espace de Paris-Le Bourget, plus connu sous le nom de Salon du Bourget, ou sous le sigle SIAE, est une des plus importantes manifestations 
+                    internationales de présentation de matériels aéronautiques et spatiaux, se déroulant à l'aéroport du Bourget, au nord-est de Paris.</p>
+            </center>
+        </div>
+
+        <script>
+            document.getElementById("changeStyleOnclick_1").onclick = showHiddenElement1;
+
+            function showHiddenElement1(){
+                document.getElementById("description_news_1").style.visibility = "visible";
+            }
+
+            document.getElementById("changeStyleOnclick_2").onclick = showHiddenElement2;
+
+            function showHiddenElement2(){
+                document.getElementById("description_news_2").style.visibility = "visible";
+            }
+        </script>
+
+        <div id="changeStyleOnclick_3">
+            <center>
+                <img src="/home/julian/Images/actu_avion.jpeg" alt="" class="w-5/6  h-32 lg:h-80">
+                <div class="font-bold "> Échange d'avions: Luke Aikins et Andy Farrington échouent dans leur tentative </div>
+            </center>
+        </div>
+        <div id="changeStyleOnclick_4">
+            <center>
+                <img src="/home/julian/Images/ticket_avion.jpeg" alt="" class="w-5/6  h-32  lg:h-80 lg:w-1/3" >
+                <div class="font-bold "> Hausse des prix du transport aérien </div>
+            </center>
+        </div>
+
+        <div style="visibility:hidden" id="description_news_3">
+            <center>
+                <p>Luke Aikins et David Farrington n'ont pas réussi leur défi qui était de s'échanger leur avion en plein vol.
+                    Ce dimanche, les deux Américains ont vu leur tentative échouer.</p>
+                <p class="hidden lg:block">« L'un des deux avions a changé de quelques degrés son inclinaison, a expliqué Farrington. Il n'y avait aucune chance que je l'atteigne. » 
+                    Grâce à un système de parachute automatique, l'autre avion ne s'est pas crashé. « Je suis content qu'Andy aille bien, était soulagé Aikins. C'est le plus important, 
+                    bien sûr qu'il y a un peu de déception, mais tout le monde est en sécurité, il n'y a pas de blessés. »</p>
+            </center>
+        </div>
+
+        <div style="visibility:hidden" id="description_news_4">
+            <center>
+                <p> Depuis le début de l’année, la hausse atteint 6,3%. Ceci est dû à la montée du kérosène.</p>
+                <p class="hidden lg:block">Entre février 2021 et février 2022, les prix au départ de France ont augmenté de 7%. Depuis le début de l'année, la hausse atteint 6,3%. Sur le réseau intérieur, les prix des billets sur les liaisons 
+                    intra-métropolitaines font exception à la règle avec une baisse de 1,3 % (+0,2 % au cumul) par rapport à février 2021</p>
+            </center>
+        </div>
+        <script>
+            document.getElementById("changeStyleOnclick_3").onclick = showHiddenElement3;
+
+            function showHiddenElement3(){
+                document.getElementById("description_news_3").style.visibility = "visible";
+            }
+
+            document.getElementById("changeStyleOnclick_4").onclick = showHiddenElement4;
+
+            function showHiddenElement4(){
+                document.getElementById("description_news_4").style.visibility = "visible";
+            }
+        </script>
+    </div>
+    <div>
+        <br>
+        <br>
+        <center> <button class="bg-fuchsia-500 shadow-lg shadow-fuchsia-500/50 p-1" id="abonnement">s'abonner</button> </center>
+        <div style="visibility:hidden" id="formulaire">
+            <form >
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name" required>
+                    <br>
+                </div>
+                <div>
+                    <label for="mail">e-mail&nbsp;:</label>
+                    <input type="email" id="mail" name="user_mail" required>
+                </div>
+                <br>
+                <button onclick="register()" class="bg-fuchsia-500 shadow-lg shadow-fuchsia-500/50 p-1" id="confirmed">confirmer</button> 
+            </form>
+            <script>
+                document.getElementById("abonnement").onclick = showHiddenFormular;
+
+                function showHiddenFormular(){
+                    document.getElementById("formulaire").style.visibility = "visible";
+                }
+
+                class User{
+                    constructor(name, mail){
+                        this.name = name
+                        this.mail = mail
+                        }
+                    }
+                users=[]
+                
+                function register(){
+                    var nom = document.getElementById("name").value.toLowerCase()
+                    var mail = document.getElementById("mail").value.toLowerCase()
+                    console.log(nom, mail)
+                    if ( (nom != "" && mail != "" && mail.includes("@")) && (mail.includes(".fr") || mail.includes(".com"))){
+                        users.push([new User(nom, mail)])
+                    
+                        console.log(users);
+                    }
+                }
+                
+            </script>
+            
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
